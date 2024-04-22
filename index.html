@@ -33,13 +33,13 @@ body {
 <head>
   <meta name="theme-color" content="#2C2F33">
   <meta charset="UTF-8">
-  <meta name="description" content="Azlan's iframe Browser">
+  <meta name="description" content="RZframe - An iFrame Browser for Puter and other websites.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0, no-store">
   <!meta http-equiv="cache-control" content="max-age=0" />
   <!meta http-equiv="Pragma" content="no-cache">
   <!meta http-equiv="Expires" content="0">
-  <title> Iframe Browser </title>
+  <title>RZframe</title>
   <link rel="canonical" href="https://azlancoding.github.io/iframe-browser-pwa/" />
   <link rel="manifest" href="/iframe-browser-pwa/manifest.webmanifest">
   <meta name="keywords" content="bypass, school, browser in website, cloud browser">
@@ -151,7 +151,7 @@ function checkCookie() {
      	var newurl = getValidUrl(document.getElementById("URL").value);
      	objFrame.src = newurl;
      } else {
-	   	objFrame.src = "https://azlancoding.github.io/iframe-browser-pwa/404.html";
+	   	objFrame.src = "https://ralfszeltins22.github.io/iframe-browser-pwa/404.html";
 		 }   
    }
    function ReloadPage()
@@ -295,16 +295,13 @@ body {
 <body style="background-color:#254B85">
 <div id="titleBarContainer" >
       <div id="titleBar">
-        <span class="draggable" style="font-size: 65%; width: 8vh; height: 5vh">Iframe Browser</span>
-        <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" spellcheck="false" value="https://www.google.com" size="25px"></input>
-	<input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
-	<input type="button" VALUE="&#x21bb"  onClick="ReloadPage()">
+        <input type="button" VALUE="&#x21bb"  onClick="ReloadPage()">
         <input type="button" VALUE="&#65513"  onClick="history.back()">
         <input type="button" VALUE="&#65515"  onClick="history.forward()">
+        <input class="nonDraggable" type="text" ID="URL" placeholder="Enter a URL" spellcheck="false" value="https://www.google.com" size="25px"></input>
+	<input type="submit" class="frmSubmit" value="Go" onclick="LoadPage()">
         <input type="button" class="fullscreen" value="&#x26F6;" onclick="openFullscreen()">
         <input type="button" class="Exitfullscreen" value="Exit Fullscreen" onclick="closeFullscreen()">
-        <input type="button" class="newWindow" value="New Window" onclick=" window.open('https://azlancoding.github.io/iframe-browser-pwa/','_blank')">
-        <input type="button" class="cloudbrowser" value="Cloud Browser" onclick="window.open('https://replit.com/@azlancoding/free-and-unlimited-cloud-browser?embed=true','_blank')">
       </div>
 </div>
 <!div style="Clear:both;"> 
@@ -327,7 +324,7 @@ function check(){
 </script>
   <script>
       //alert(document.getElementById("myiframe").src);
-      checkt = 'document.getElementById("myiframe").title = "iframe"; document.getElementById("myiframe").contentWindow.history.replaceState(, "iframe", "https://azlancoding.github.io/iframe-browser-pwa");'
+      checkt = 'document.getElementById("myiframe").title = "iframe"; document.getElementById("myiframe").contentWindow.history.replaceState(, "iframe", "https://ralfszeltins22.github.io/rzframe");'
       setInterval(checkt,500);
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register (
