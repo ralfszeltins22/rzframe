@@ -103,7 +103,6 @@ body {
 function checkSession(){
    var c = getCookie("visited");
    if (c === "yes") {
-     alert("Welcome back! Make sure you have your extension on.");
    } 
 	else {
 	ext_install();
@@ -111,7 +110,7 @@ function checkSession(){
 }
 function ext_install() 
 	{
-  if (window.confirm('An extension is required for this website to work. Do you want to install it now?')) 
+  if (window.confirm('An extension is required for RZframe to work. Do you want to install it now?')) 
    {	
 		setCookie("visited", "yes", 365)
 		window.location.href='https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe';
