@@ -117,14 +117,6 @@ function checkSession(){
 	ext_install();
    }
 }
-function ext_install() 
-	{
-  if (window.confirm('An extension is required for RZframe to work. Do you want to install it now?')) 
-   {	
-		setCookie("visited", "yes", 365)
-		window.location.href='https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe';
-		};
-  };
 
 function checkCookie() {
   let user = getCookie("alerted");
